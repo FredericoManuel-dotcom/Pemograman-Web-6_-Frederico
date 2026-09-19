@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222222;
+  background-color: #f19b10;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #2563eb;
+  padding: 16px 32px;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo-img {
+    height: 30px;
+    width: auto;
+    display: block;
+}
+
+.navbar nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.contact-list a {
+  color: #2563eb;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 48px 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+.welcome {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.welcome p {
+  color: #555555;
+  margin-bottom: 24px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #1d4ed8;
+}
+
+.about p {
+  color: #555555;
+  max-width: 65ch;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.tag-list li {
+  background-color: #68da0c;
+  border: 1px solid #df0681;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-card {
+  flex: 1 1 250px;
+  border: 1px solid #d7dce4;
+  border-radius: 4px;
+  padding: 20px;
+  background-color: #18e8ec;
+}
+
+.project-card h3 {
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  color: #555555;
+}
+
+.contact-list li {
+  margin-bottom: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  background-color: #0b72d2;
+  color: #555555;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .navbar nav ul {
+    justify-content: center;
+  }
+
+  section {
+    padding: 32px 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}
